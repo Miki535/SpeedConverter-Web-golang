@@ -28,7 +28,7 @@ func osn(w http.ResponseWriter, r *http.Request) {
 		if err1 != nil || err2 != nil {
 
 		}
-
+		//if user search kmh:
 		if kmh1 == "" {
 			mphh := 1.6
 
@@ -42,6 +42,7 @@ func osn(w http.ResponseWriter, r *http.Request) {
 			tpl.Execute(w, data)
 			return
 
+			//if user search mph:
 		} else if mph1 == "" {
 			mphh := 0.6
 
